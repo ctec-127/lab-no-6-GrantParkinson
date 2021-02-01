@@ -82,7 +82,7 @@
             <input type="number" value="<?php if (isset($_POST['originaltemp'])) {
                                             echo $_POST['originaltemp'];
                                         }
-                                        ?>" name="originaltemp" size="14" maxlength="7" id="temp">
+                                        ?>" name="originaltemp" id="temp">
             <select name="originalunit">
                 <option value="--Select--"<?php if($originalUnit == "--Select--") echo ' selected="selected"';?>>--Select--</option>
                 <option value="celsius"<?php if($originalUnit == "celsius") echo ' selected="selected"';?>>Celsius</option>
@@ -94,7 +94,7 @@
         <div class="group">
             <label for="convertedtemp">Converted Temperature</label>
             <input type="text" value="<?php if (isset($convertedTemp)){echo $convertedTemp;}else{echo"";}?>" 
-            name="convertedtemp" size="14" maxlength="7" id="convertedtemp" readonly>
+            name="convertedtemp" id="convertedtemp" readonly>
 
             <select name="conversionunit">
                 <option value="--Select--"<?php if($conversionUnit == "--Select--") echo ' selected="selected"';?>>--Select--</option>
